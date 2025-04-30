@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Nova+Mono&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.navbar{
+    z-index: 333;
+    position: absolute;
+    top: -20rem;
+    left: 0;
+}
+
+.reveal-section{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.block{
+    width: 100%;
+    height: 100%;
+    background: #eee;
+}
+
+.intro-logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    transform: translate(-61.5%, -50%);
+    gap: .5rem;
+    font-family: "Exo 2", sans-serif;
+}
+
+.word h1{
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.word h1 span{
+    font-weight: 800;
+}
+
+.divider{
+    position: absolute;
+    top: 0;
+    left: 49.9%;
+    transform: translateX(-50%);
+    transform-origin: center top;
+    width: 1px;
+    height: 100%;
+    background: #050505;
+}
+
+.spinner-container{
+    position: absolute;
+    bottom: 10%;
+    left: 49.9%;
+    transform: translateX(-50%);
+}
+
+.spinner{
+    width: 50px;
+    height: 50px;
+    border: 2px solid #05050550;
+    border-top-color: #000;
+    border-radius: 100%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.counter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.count{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.digit{
+    flex: 2;
+    padding-top: 1rem;
+}
+
+.count .digit h1 {
+    font-size: 15rem;
+    font-weight: 400;
+  }
+
+.word,
+.count .digit {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.cta-label p,
+.count .digit h1 {
+  position: relative;
+  transform: translateY(120%);
+  will-change: transform;
+}
+
+#word-1 h1 {
+  transform: translateY(-120%);
+}
+
+#word-2 h1 {
+  transform: translateY(120%);
+}
+
+.block {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+
+}
+
+.divider {
+    transform: scaleY(0%);
+    will-change: transform;
+}
+
+.Hero-section{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    /* transform: scale(.5); */
+}
+
+.Hero-section .hero-img-container{
+    width: 100%;
+    height: 100%;
+}
+
+/* .Hero-section .hero-img-container {
+    width: 100%;
+    height: 100%;
+} */
+
+.hero-img-copy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    mix-blend-mode: difference;
+  }
+  .hero-img-copy-h1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    border: #000 1px solid;
+  }
+  .hero-img-copy-h1 h1 {
+    font-size: 200px;
+    color: #fff;
+    font-family: "Exo 2", sans-serif;
+    letter-spacing: -10px;
+    font-weight: 400;
+  }
+  .hero-img-copy-h1 h1 span{
+    font-weight: 800;
+  }
+  .hero-img-copy-h1 h6 {
+    font-size: 20px;
+    color: #fff;
+    font-family: "Exo 2", sans-serif;
+  }
+
+  .Project{
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+  }
