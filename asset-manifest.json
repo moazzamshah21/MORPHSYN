@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/react-project-3/static/css/main.a30ab076.css",
-    "main.js": "/react-project-3/static/js/main.cdb1d592.js",
-    "index.html": "/react-project-3/index.html",
-    "main.a30ab076.css.map": "/react-project-3/static/css/main.a30ab076.css.map",
-    "main.cdb1d592.js.map": "/react-project-3/static/js/main.cdb1d592.js.map"
+    "main.css": "/MORPHSYN/static/css/main.a30ab076.css",
+    "main.js": "/MORPHSYN/static/js/main.b33b1470.js",
+    "index.html": "/MORPHSYN/index.html",
+    "main.a30ab076.css.map": "/MORPHSYN/static/css/main.a30ab076.css.map",
+    "main.b33b1470.js.map": "/MORPHSYN/static/js/main.b33b1470.js.map"
   },
   "entrypoints": [
     "static/css/main.a30ab076.css",
-    "static/js/main.cdb1d592.js"
+    "static/js/main.b33b1470.js"
   ]
 }
